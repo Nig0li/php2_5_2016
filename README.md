@@ -21,7 +21,7 @@ line - 70
 file - Controllers\News
 line - 39
 
-class Logger - Components\Logger
+class Logger (Components\Logger)
 file - \index.php
 line - 16
 line - 19

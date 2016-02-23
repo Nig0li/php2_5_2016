@@ -1,5 +1,5 @@
-date: 2016-23-02 11:20:22
-file: C:\OpenServer\domains\git\Components\Ancestor.php
-line: 86
-message: ошибка 404
-count: 3
+date: 2016-23-02 12:05:42
+file: C:\OpenServer\domains\less5\Components\Db.php
+line: 20
+message: ошибка подключения к базе данных
+count: 5

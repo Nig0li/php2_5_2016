@@ -8,15 +8,14 @@ $controllerName = $route['controller'];
 $actionName = $route['action'];
 
 $controller = new $controllerName();
+$logfile = new \Components\Logger();
 
 try {
     $controller->action($actionName);
 } catch (\Exceptions\Db $e) {
+    $logfile->record($e);
     include __DIR__ . '/Templates/error.php';
-    $logfile = new \Components\Logger();
-    $logfile->record($e);
 } catch (\Exceptions\E404 $e) {
-    include __DIR__ . '/Templates/e404.php';
-    $logfile = new \Components\Logger();
     $logfile->record($e);
+    include __DIR__ . '/Templates/e404.php';
 }

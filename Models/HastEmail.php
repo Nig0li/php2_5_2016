@@ -3,7 +3,7 @@
 namespace Models;
 
 
-interface HastEmail
+interface HasEmail
 {
     public function getEmail();
 }
